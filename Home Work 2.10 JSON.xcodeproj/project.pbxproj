@@ -12,6 +12,8 @@
 		B575891E230EF74200FE841D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B575891C230EF74200FE841D /* Main.storyboard */; };
 		B5758920230EF74300FE841D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B575891F230EF74300FE841D /* Assets.xcassets */; };
 		B5758923230EF74300FE841D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5758921230EF74300FE841D /* LaunchScreen.storyboard */; };
+		B575892F230FCAB900FE841D /* JSONModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B575892E230FCAB900FE841D /* JSONModel.swift */; };
+		B5758935230FCB7E00FE841D /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5758934230FCB7E00FE841D /* DataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,9 @@
 		B575891F230EF74300FE841D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5758922230EF74300FE841D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5758924230EF74300FE841D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B575892E230FCAB900FE841D /* JSONModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONModel.swift; sourceTree = "<group>"; };
+		B5758934230FCB7E00FE841D /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		B5758954230FF92C00FE841D /* Playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Playground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +59,49 @@
 		B5758917230EF74200FE841D /* Home Work 2.10 JSON */ = {
 			isa = PBXGroup;
 			children = (
-				B5758918230EF74200FE841D /* AppDelegate.swift */,
-				B575891A230EF74200FE841D /* ViewController.swift */,
-				B575891C230EF74200FE841D /* Main.storyboard */,
-				B575891F230EF74300FE841D /* Assets.xcassets */,
-				B5758921230EF74300FE841D /* LaunchScreen.storyboard */,
-				B5758924230EF74300FE841D /* Info.plist */,
+				B5758930230FCAC300FE841D /* Model */,
+				B5758933230FCB1B00FE841D /* View */,
+				B5758931230FCAEB00FE841D /* Controller */,
+				B5758932230FCB0F00FE841D /* Etcetera */,
 			);
 			path = "Home Work 2.10 JSON";
+			sourceTree = "<group>";
+		};
+		B5758930230FCAC300FE841D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B575892E230FCAB900FE841D /* JSONModel.swift */,
+				B5758934230FCB7E00FE841D /* DataManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B5758931230FCAEB00FE841D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B575891A230EF74200FE841D /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B5758932230FCB0F00FE841D /* Etcetera */ = {
+			isa = PBXGroup;
+			children = (
+				B575891F230EF74300FE841D /* Assets.xcassets */,
+				B5758918230EF74200FE841D /* AppDelegate.swift */,
+				B5758924230EF74300FE841D /* Info.plist */,
+				B5758954230FF92C00FE841D /* Playground.playground */,
+			);
+			path = Etcetera;
+			sourceTree = "<group>";
+		};
+		B5758933230FCB1B00FE841D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B5758921230EF74300FE841D /* LaunchScreen.storyboard */,
+				B575891C230EF74200FE841D /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +177,8 @@
 			files = (
 				B575891B230EF74200FE841D /* ViewController.swift in Sources */,
 				B5758919230EF74200FE841D /* AppDelegate.swift in Sources */,
+				B575892F230FCAB900FE841D /* JSONModel.swift in Sources */,
+				B5758935230FCB7E00FE841D /* DataManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,7 +325,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Home Work 2.10 JSON/Info.plist";
+				DEVELOPMENT_TEAM = 7L8D6FC4F7;
+				INFOPLIST_FILE = "$(SRCROOT)/Home Work 2.10 JSON/Etcetera/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +343,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Home Work 2.10 JSON/Info.plist";
+				DEVELOPMENT_TEAM = 7L8D6FC4F7;
+				INFOPLIST_FILE = "$(SRCROOT)/Home Work 2.10 JSON/Etcetera/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
